@@ -1,0 +1,22 @@
+
+############################# 访问路径、端口tomcat start #############################
+server:
+  port: 8888
+  servlet:
+    context-path: /api
+  tomcat:
+    max-threads: 1000
+    min-spare-threads: 30
+    uri-encoding: UTF-8
+############################# 访问路径、端口tomcat end ###############################
+
+# 当前项目maven激活环境，例如：dev/test/uat/prod，对应pom.xml中profile设置值
+---
+spring:
+  profiles:
+    active: @profileActive@
+  aop:
+    auto: true
+
+logging:
+  config: classpath:config/log4j2.xml
