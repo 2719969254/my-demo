@@ -20,3 +20,9 @@ spring:
 
 logging:
   config: classpath:config/log4j2.xml
+
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql

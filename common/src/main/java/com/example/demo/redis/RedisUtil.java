@@ -6,6 +6,9 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.data.redis.core.BoundListOperations;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.script.DefaultRedisScript;
+import org.springframework.data.redis.core.script.RedisScript;
+import org.springframework.data.redis.core.script.ScriptExecutor;
+import org.springframework.lang.Nullable;
 import org.springframework.scripting.support.ResourceScriptSource;
 import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
@@ -599,12 +602,4 @@ public class RedisUtil {
     }
 
     //=========BoundListOperations 用法 End============
-
-    /**
-     * 操作lua脚本
-     */
-    public <T> T execute(String luaScript, Class<T> resultType, List<String> keys, Object... args){
-        DefaultRedisScript<T> redisScript =new DefaultRedisScript<>(luaScript,resultType);
-        return redisTemplate.execute(redisScript,keys,args);
-    }
 }
