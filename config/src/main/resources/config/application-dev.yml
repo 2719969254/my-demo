@@ -1,9 +1,9 @@
 spring:
   datasource:
     druid:
-      url: jdbc:mysql://localhost:3306/my_demo?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true
+      url: jdbc:mysql://47.95.234.255:3306/my_demo?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true
       username: root
-      password: root
+      password: 888666hyHY...
       driver-class-name: com.mysql.jdbc.Driver
 
   redis:
