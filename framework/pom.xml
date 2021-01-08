@@ -49,6 +49,11 @@
             <groupId>com.example</groupId>
             <artifactId>config</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>common</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

@@ -7,6 +7,7 @@
         <module>config</module>
         <module>bootstrap</module>
         <module>framework</module>
+        <module>common</module>
     </modules>
     <groupId>com.example</groupId>
     <artifactId>my-demo-parent</artifactId>
@@ -150,6 +151,12 @@
             <artifactId>bootstrap</artifactId>
             <version>${project.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
     </dependencies>
     </dependencyManagement>
 
@@ -191,6 +198,17 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-log4j2</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
     </dependencies>
 
     <build>
