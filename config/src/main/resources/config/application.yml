@@ -17,6 +17,12 @@ spring:
     active: @profileActive@
   aop:
     auto: true
+  cloud:
+    zookeeper:
+      connect-string: 127.0.0.1:2181
+      discovery:
+        root: /sentinel-demo/SYSTEM-CODE-DEMO-FLOW
+        enabled: true
 
 logging:
   config: classpath:config/log4j2.xml
