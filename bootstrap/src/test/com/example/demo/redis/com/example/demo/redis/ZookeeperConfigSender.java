@@ -18,11 +18,11 @@ public class ZookeeperConfigSender {
 
     public static void main(String[] args) throws Exception {
         final String remoteAddress = "localhost:2181";
-        final String groupId = "sentinel-demo";
-        final String dataId = "SYSTEM-CODE-DEMO-FLOW";
+        final String groupId = "Sentinel";
+        final String dataId = "my-demo";
         final String rule = "[\n"
                 + "  {\n"
-                + "    \"resource\": \"testSentinel\",\n"
+                + "    \"resource\": \"my-demo\",\n"
                 + "    \"controlBehavior\": 0,\n"
                 + "    \"count\": 2.0,\n"
                 + "    \"grade\": 1,\n"

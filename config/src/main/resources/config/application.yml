@@ -13,16 +13,16 @@ server:
 # 当前项目maven激活环境，例如：dev/test/uat/prod，对应pom.xml中profile设置值
 ---
 spring:
+  application:
+    name: my-demo
   profiles:
     active: @profileActive@
   aop:
     auto: true
   cloud:
-    zookeeper:
-      connect-string: 127.0.0.1:2181
-      discovery:
-        root: /sentinel-demo/SYSTEM-CODE-DEMO-FLOW
-        enabled: true
+    sentinel:
+      transport:
+        dashboard: localhost:8082
 
 logging:
   config: classpath:config/log4j2.xml
@@ -32,3 +32,9 @@ pagehelper:
   reasonable: true
   supportMethodsArguments: true
   params: count=countSql
+
+  # 让 Sentinel 客户端知道去 zookeeper 中拿配置规则
+sentinel:
+  zookeeper:
+    address: 127.0.0.1:2181
+    path: /Sentinel/my-demo
