@@ -8,6 +8,7 @@
         <module>bootstrap</module>
         <module>framework</module>
         <module>common</module>
+        <module>study</module>
     </modules>
     <groupId>com.example</groupId>
     <artifactId>my-demo-parent</artifactId>
@@ -28,7 +29,7 @@
 
 
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
-        <maven-resources-plugin.version>3.1.0</maven-resources-plugin.version>
+        <maven-resources-plugin.version>3.2.0</maven-resources-plugin.version>
         <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
         <maven-javadoc-plugin.version>3.1.1</maven-javadoc-plugin.version>
         <maven-versions-plugin.version>2.2</maven-versions-plugin.version>
